@@ -37,7 +37,7 @@ export function TextSlider({ messages }: TextSliderProps) {
                   <span className="text-base font-semibold text-white">
                     {text}
                   </span>
-                  <span className="text-xs text-white">{subtext}</span>
+                  <span className="text-xs text-white mb-3">{subtext}</span>
                   <Button
                     variant={"ghost"}
                     size={"sm"}
