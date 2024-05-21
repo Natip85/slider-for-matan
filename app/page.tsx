@@ -15,7 +15,7 @@ const messages = [
 ];
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-purple-400 to-purple-800">
       <div className="w-fit mx-auto p-10">
         <TextSlider messages={messages} />
       </div>

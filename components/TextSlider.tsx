@@ -25,19 +25,19 @@ export function TextSlider({ messages }: TextSliderProps) {
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20 rounded-full bg-purple-400 p-2">
+      <div className="absolute -top-7 left-1/2 transform -translate-x-1/2 z-20 rounded-full bg-purple-800 p-2">
         <AlertCircle className="w-[51.5px] h-[51.5px]" stroke="white" />
       </div>
       <CarouselContent className=" h-[257px]">
         {messages.map(({ text, subtext }, index) => (
-          <CarouselItem key={index} className="bg-purple-400">
+          <CarouselItem key={index} className="bg-purple-800">
             <div className="p-1">
-              <Card className="border-0 shadow-none bg-purple-400">
+              <Card className="border-0 shadow-none bg-purple-800">
                 <CardContent className="flex flex-col gap-3 aspect-square items-center justify-center p-6">
                   <span className="text-base font-semibold text-white">
                     {text}
                   </span>
-                  <span className="text-xs text-white mb-3">{subtext}</span>
+                  <span className="text-xs text-white">{subtext}</span>
                   <Button
                     variant={"ghost"}
                     size={"sm"}
